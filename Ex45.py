@@ -289,47 +289,4 @@ Do you really want to keep this item?
 
 
 
-def is_dead():
-    if health < 1:
-        return True
-
-    else:
-        return False 
-
-class Scene(object):
-
-    def enter(self):
-        print("This scene is not yet configured.")
-        print("Subclass it and implemente enter()")
-        exit(1)
-
-
-class House(Scene):
-
-    print("House")
-    pass
-
-
-class Forest(Scene):
-
-    pass
-
-
-class Map(object):
-
-   scenes_dic = {
-       1 : House(),
-       2 : Forest()
-   }
-   
-   def enter_scene():
-       pass
-
-
-map_start = Map()
-
-map_start.scenes_dic[1]
-
-
-
 CreateClass()
